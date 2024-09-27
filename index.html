@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Website Home Template</title>
+  <title>Home Template with Slideshow and Dropdown</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Header Section with Navigation -->
   <header>
     <div class="container">
-      <h1>Your Company Name</h1>
+      <h1>Your Company</h1>
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li class="dropdown">
             <a href="#services" class="dropbtn">Services</a>
@@ -25,7 +24,6 @@
             </div>
           </li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#why-choose">Why Choose Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -37,15 +35,15 @@
     <div class="slideshow-container">
       <div class="slide fade">
         <img src="images/slide1.jpg" alt="Slide 1">
-        <div class="caption">Caption for Slide 1</div>
+        <div class="caption">Welcome to Our Website</div>
       </div>
       <div class="slide fade">
         <img src="images/slide2.jpg" alt="Slide 2">
-        <div class="caption">Caption for Slide 2</div>
+        <div class="caption">Our Services are the Best</div>
       </div>
       <div class="slide fade">
         <img src="images/slide3.jpg" alt="Slide 3">
-        <div class="caption">Caption for Slide 3</div>
+        <div class="caption">Contact Us for More Information</div>
       </div>
       <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
       <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -58,90 +56,38 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="bg-light">
+  <!-- Main Content Sections -->
+  <section id="services" class="section">
     <div class="container">
       <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="service-card" id="service1">
-          <i class="fas fa-code"></i>
-          <h3>Web Development</h3>
-          <p>We create responsive and dynamic websites tailored to your business needs.</p>
-        </div>
-        <div class="service-card" id="service2">
-          <i class="fas fa-search"></i>
-          <h3>SEO Optimization</h3>
-          <p>Improve your search engine ranking and visibility to reach a larger audience.</p>
-        </div>
-        <div class="service-card" id="service3">
-          <i class="fas fa-bullhorn"></i>
-          <h3>Marketing</h3>
-          <p>Strategic marketing campaigns to boost your brand and increase engagement.</p>
-        </div>
-      </div>
+      <p>We provide a wide range of services to meet all your needs.</p>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about">
+  <section id="about" class="section bg-light">
     <div class="container">
       <h2>About Us</h2>
-      <p>We are a team of dedicated professionals committed to delivering top-notch solutions to our clients. Our mission is to empower businesses by providing innovative and effective solutions.</p>
+      <p>Learn more about our company and what we stand for.</p>
     </div>
   </section>
 
-  <!-- Why Choose Us Section -->
-  <section id="why-choose" class="bg-light">
-    <div class="container">
-      <h2>Why Choose Us</h2>
-      <div class="reasons">
-        <div class="reason">
-          <h3>Expert Team</h3>
-          <p>Our team consists of industry experts with years of experience.</p>
-        </div>
-        <div class="reason">
-          <h3>Client-Focused</h3>
-          <p>We prioritize our clients' needs and deliver tailored solutions.</p>
-        </div>
-        <div class="reason">
-          <h3>Proven Results</h3>
-          <p>We have a track record of delivering successful projects on time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Us Section -->
-  <section id="contact">
+  <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <p>Feel free to get in touch with us for any inquiries or support.</p>
     </div>
   </section>
 
   <!-- Footer Section -->
   <footer>
     <div class="container">
+      <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
       <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#booking">Booking Us</a></li>
-        <li><a href="#contact">Contact Link</a></li>
       </ul>
-      <p>&copy; <span id="year"></span> Your Company Name. All rights reserved.</p>
     </div>
   </footer>
 
