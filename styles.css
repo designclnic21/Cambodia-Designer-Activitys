@@ -58,12 +58,17 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('./20240928_120832.jpg');
+    background-image: url('20240928_120832.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 100px 0;
+ 	
+}
+.hero .container{
+	background : rgba(0,0,0,0.7);
+padding: 20px;
 }
 
 .hero h2 {
