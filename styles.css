@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('20240928_120832.jpg');
+    background-image: url('./20240928_120832.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
